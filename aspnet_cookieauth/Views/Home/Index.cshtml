@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        
+        <h2>Authentication status </h2>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <h2>** Logged in ** - User : @User.Identity.Name</h2>
+            
+        }
+        else
+        {
+            <h2>** Logged Off **</h2>
+            
+        }
+
+    </div>
+</div>
+
